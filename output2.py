@@ -65,4 +65,4 @@ for i in sor:
             reas=reas+[sor[i][j]]
 columns=['Rank','Name','UID','No.of Statements','No.of Reasons']
 df=pd.DataFrame(list(zip(rank,name1,ID1,stmt,reas)),columns=columns)
-df.to_excel("C:/Users/Mona/PycharmProjects/agile/Output sheets/Leaderboard_Individual.xlsx",sheet_name="LeaderBoard Individual(Output)",columns=columns)
+df.to_excel("C:/Users/Mona/PycharmProjects/agile/Output sheets/Leaderboard_Individual.xlsx",sheet_name="LeaderBoard Individual(Output)",columns=columns,index=False)
