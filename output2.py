@@ -1,9 +1,7 @@
 import pandas as pd
 gsheetid='1NRmXI_L0W89yj2uow4UvhVGVEDLDd9szpbE-9v7enpI'
-sheet_name1='data1'
-sheet_name2='data2'
-gsheet_url1=f"https://docs.google.com/spreadsheets/d/{gsheetid}/gviz/tq?tqx=out:csv&sheet={sheet_name1}"
-gsheet_url2=f"https://docs.google.com/spreadsheets/d/{gsheetid}/gviz/tq?tqx=out:csv&sheet={sheet_name2}"
+gsheet_url1=f"https://docs.google.com/spreadsheets/d/{gsheetid}/gviz/tq?tqx=out:csv&sheet=data1"
+gsheet_url2=f"https://docs.google.com/spreadsheets/d/{gsheetid}/gviz/tq?tqx=out:csv&sheet=data2"
 df1=pd.read_csv(gsheet_url1)
 df2=pd.read_csv(gsheet_url2)
 name_ID={}
